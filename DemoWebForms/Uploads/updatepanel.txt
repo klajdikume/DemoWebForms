@@ -1,0 +1,10 @@
+﻿<asp:UpdatePanel>
+	<ContentTemplate>
+		<asp:GridView id="gvCustomers" runat="server" />
+	<ContentTemplate>
+	<Triggers>
+		<asp:AsyncPostBackTrigger ControlId="btnSubmit" EventNme="Click" /> //btn submit merr pjese per te update panelin. (GridView fresh data )
+	</Triggers>
+</asp:UpdatePanel>
+
+<asp:Button id="btnSubmit" runat="server" Text="Submit" />
